@@ -1,32 +1,26 @@
-//
-//  debuggingTests_UnitTest.swift
-//  debuggingTests UnitTest
-//
-//  Created by Bilal on 15.11.2021.
-//
-
 import XCTest
 
-class debuggingTests_UnitTest: XCTestCase {
+@testable import debugging
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+class debuggingTests_UnitTest: XCTestCase
+{
+    func testExample()
+    {
+        var myVar : String?
+        
+        XCTAssertNil(myVar)
+        
+        
+        myVar = "hi"
+        
+        XCTAssertEqual(myVar, "hi")
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    
+    func testMyFunctionOutput()
+    {
+        let vc = ViewController()
+        XCTAssertNotNil(vc.myFunc)
+        
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
