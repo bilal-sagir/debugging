@@ -13,7 +13,18 @@
 		9CE065052741D09400E85453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE065032741D09400E85453 /* Main.storyboard */; };
 		9CE065072741D09600E85453 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CE065062741D09600E85453 /* Assets.xcassets */; };
 		9CE0650A2741D09600E85453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE065082741D09600E85453 /* LaunchScreen.storyboard */; };
+		9CE065182742A07000E85453 /* debuggingTests_UnitTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE065172742A07000E85453 /* debuggingTests_UnitTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CE065192742A07000E85453 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9CE064F22741D09400E85453 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9CE064F92741D09400E85453;
+			remoteInfo = debugging;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9CE064FA2741D09400E85453 /* debugging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = debugging.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,19 @@
 		9CE065062741D09600E85453 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CE065092741D09600E85453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CE0650B2741D09600E85453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CE065152742A07000E85453 /* debuggingTests UnitTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "debuggingTests UnitTest.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CE065172742A07000E85453 /* debuggingTests_UnitTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = debuggingTests_UnitTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9CE064F72741D09400E85453 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CE065122742A07000E85453 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				9CE064FC2741D09400E85453 /* debugging */,
+				9CE065162742A07000E85453 /* debuggingTests UnitTest */,
 				9CE064FB2741D09400E85453 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				9CE064FA2741D09400E85453 /* debugging.app */,
+				9CE065152742A07000E85453 /* debuggingTests UnitTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +87,14 @@
 				9CE0650B2741D09600E85453 /* Info.plist */,
 			);
 			path = debugging;
+			sourceTree = "<group>";
+		};
+		9CE065162742A07000E85453 /* debuggingTests UnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				9CE065172742A07000E85453 /* debuggingTests_UnitTest.swift */,
+			);
+			path = "debuggingTests UnitTest";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +117,24 @@
 			productReference = 9CE064FA2741D09400E85453 /* debugging.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9CE065142742A07000E85453 /* debuggingTests UnitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CE0651B2742A07000E85453 /* Build configuration list for PBXNativeTarget "debuggingTests UnitTest" */;
+			buildPhases = (
+				9CE065112742A07000E85453 /* Sources */,
+				9CE065122742A07000E85453 /* Frameworks */,
+				9CE065132742A07000E85453 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9CE0651A2742A07000E85453 /* PBXTargetDependency */,
+			);
+			name = "debuggingTests UnitTest";
+			productName = "debuggingTests UnitTest";
+			productReference = 9CE065152742A07000E85453 /* debuggingTests UnitTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +147,10 @@
 				TargetAttributes = {
 					9CE064F92741D09400E85453 = {
 						CreatedOnToolsVersion = 13.0;
+					};
+					9CE065142742A07000E85453 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 9CE064F92741D09400E85453;
 					};
 				};
 			};
@@ -116,6 +168,7 @@
 			projectRoot = "";
 			targets = (
 				9CE064F92741D09400E85453 /* debugging */,
+				9CE065142742A07000E85453 /* debuggingTests UnitTest */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +181,13 @@
 				9CE0650A2741D09600E85453 /* LaunchScreen.storyboard in Resources */,
 				9CE065072741D09600E85453 /* Assets.xcassets in Resources */,
 				9CE065052741D09400E85453 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9CE065132742A07000E85453 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +204,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9CE065112742A07000E85453 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CE065182742A07000E85453 /* debuggingTests_UnitTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9CE0651A2742A07000E85453 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9CE064F92741D09400E85453 /* debugging */;
+			targetProxy = 9CE065192742A07000E85453 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9CE065032741D09400E85453 /* Main.storyboard */ = {
@@ -338,6 +414,52 @@
 			};
 			name = Release;
 		};
+		9CE0651C2742A07000E85453 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5L637C2H24;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.debuggingTests-UnitTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/debugging.app/debugging";
+			};
+			name = Debug;
+		};
+		9CE0651D2742A07000E85453 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5L637C2H24;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.debuggingTests-UnitTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/debugging.app/debugging";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -355,6 +477,15 @@
 			buildConfigurations = (
 				9CE0650F2741D09600E85453 /* Debug */,
 				9CE065102741D09600E85453 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CE0651B2742A07000E85453 /* Build configuration list for PBXNativeTarget "debuggingTests UnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CE0651C2742A07000E85453 /* Debug */,
+				9CE0651D2742A07000E85453 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
